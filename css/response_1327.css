@@ -1,0 +1,122 @@
+@media print,
+(max-width: 1327px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .phone
+    {
+        font-size: 21px;
+    }
+
+
+    header .search .input,
+    header .catalog .btn,
+    header .cart a
+    {
+        height: 50px;
+    }
+
+
+    header .search,
+    header .menu
+    {
+        margin-left: 32px;
+    }
+
+
+    header .contacts + .contacts
+    {
+        margin-left: 40px;
+    }
+
+
+    header .account a
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .category
+    {
+        padding: 40px 30px;
+    }
+
+    .categories .category:nth-child(1):after,
+    .categories .category:nth-child(3):after,
+    .categories .category:nth-last-child(1):after,
+    .categories .category:nth-last-child(3):after
+    {
+        width: 232px;
+        height: 85px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .info
+    {
+        padding: 100px 0;
+    }
+
+
+    .reviews .bg2
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
