@@ -400,6 +400,36 @@ $(() => {
 
 		$('.mob_menu .catalog_sub').removeClass('show')
 	})
+
+
+	// Плавная прокрутка к якорю
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				if ($('.tabs button[data-content="#' + anchor + '"]').length) {
+					const $activeTab = $('.tabs button[data-content="#' + anchor + '"]'),
+						$parent = $activeTab.closest('.tabs_container'),
+						level = $activeTab.data('level')
+
+					$parent.find('.tabs:first button, .tab_content.' + level).removeClass('active')
+
+					$activeTab.addClass('active')
+					$('#' + anchor).addClass('active')
+				}
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			})
+		})
+	}
 })
 
 
